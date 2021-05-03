@@ -3,6 +3,7 @@
 - English fix by Carlos & Google Translate
 
 **Note: If you do this wrong, there is a chance for detection! The game must think everything is normal.**
+**Note: This alone no is full bypass since valorant is log each read address""
 
 ## Preface 
 Riot Games attempts to minimize the use of external cheats by applying PAGE_GUARD to an empty page and upon accessing this page will redirect to the correct pointer.
