@@ -4,7 +4,7 @@
 
 **Note: If you do this wrong, there is a chance for detection! The game must think everything is normal.**
 
-**Note: This alone does not bypasss it! At th VEH, they log the read location.  Get creative to bypass this!**
+**Note: At th VEH, they log the read location.  Get creative to bypass the detection!**
 
 ## Preface 
 Riot Games attempts to minimize the use of external cheats by applying PAGE_GUARD to an empty page and upon accessing this page will redirect to the correct pointer.
