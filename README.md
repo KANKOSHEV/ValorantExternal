@@ -21,6 +21,6 @@ Due to the exception the guarded page causes, reading virtual memory externally 
 ## Writing the bypass
 Firstly, you can either allocate page(s) or scan Valorant for usable executable and writable pages.  The same page with both writable and executable or different pages will work.  By writing these two instructions, (see figure 1) we have bypassed the guarded page system Valorant uses.  In the image, you will see an address (gworld from decryption) and a blue box (hidden address).  In the executable page you found or allocated, you will write the **mov rax, [in]** instruction.  This will dereference the guarded region address within Valorant triggering the exception handler and setting **rax** to the correct pointer.  In the second line of assembly, **mov [out], rax**, you will specify the out address (writable page) where it will apply the proper pointer.  Your driver can then read ther correct pointer.  Voila! You have read a value protected by PAGE_GUARD externally.
 
-**Note: it is your job call the code, you will need a return instruction**
+**Note: it is your job to get the code called!**
 
 ![Figure One](https://i.imgur.com/fQjG8Bn.png)
